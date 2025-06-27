@@ -55,7 +55,7 @@ export default function AnalyticsPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Department Analytics</h1>
+        <h1 className="text-3xl font-bold text-gray-300 mb-2">Department Analytics</h1>
         <p className="text-gray-600">Performance ratings by department</p>
       </div>
 
@@ -116,7 +116,7 @@ export default function AnalyticsPage() {
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {chartData.labels.map((label, index) => (
               <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                <h3 className="font-semibold text-gray-900">{label}</h3>
+                <h3 className="font-semibold text-gray-300">{label}</h3>
                 <div className="flex items-center mt-2">
                   <div className="text-2xl font-bold text-blue-600">{chartData.datasets[0].data[index]}</div>
                   <div className="ml-4">
@@ -140,7 +140,7 @@ export default function AnalyticsPage() {
           <svg className="mx-auto h-12 w-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
           </svg>
-          <h3 className="mt-2 text-lg font-medium text-gray-900">No analytics data</h3>
+          <h3 className="mt-2 text-lg font-medium text-gray-300">No analytics data</h3>
           <p className="mt-1 text-gray-500">Performance data will appear here</p>
         </div>
       )}

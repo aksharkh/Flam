@@ -40,8 +40,8 @@ export default function DashboardPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="mb-8 text-center">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Employee Directory</h1>
-        <p className="text-gray-600">Browse and manage your team members</p>
+        <h1 className="text-3xl font-bold text-gray-300 mb-2">Employee Directory</h1>
+        <p className="text-gray-400">Browse and manage your team members</p>
       </div>
 
       <div className="relative mb-8 max-w-2xl mx-auto">
@@ -73,20 +73,20 @@ export default function DashboardPage() {
             <Card key={u.id} className="transition-all duration-300 hover:shadow-lg hover:border-blue-300 hover:scale-[1.02]">
               <div className="flex justify-between items-start">
                 <div>
-                  <h3 className="text-lg font-bold text-gray-900">{u.firstName} {u.lastName}</h3>
+                  <h3 className="text-lg font-bold text-gray-300">{u.firstName} {u.lastName}</h3>
                   <p className="text-sm text-gray-500 truncate">{u.email}</p>
                 </div>
-                <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" />
+                
               </div>
               
               <div className="mt-4 grid grid-cols-2 gap-3">
                 <div>
                   <p className="text-xs font-semibold text-gray-500 uppercase">Age</p>
-                  <p className="text-gray-900 font-medium">{u.age}</p>
+                  <p className="text-gray-300 font-medium">{u.age}</p>
                 </div>
                 <div>
                   <p className="text-xs font-semibold text-gray-500 uppercase">Department</p>
-                  <p className="text-gray-900 font-medium truncate">{u.department}</p>
+                  <p className="text-gray-300 font-medium truncate">{u.department}</p>
                 </div>
                 <div>
                   <p className="text-xs font-semibold text-gray-500 uppercase">Performance</p>
@@ -103,7 +103,7 @@ export default function DashboardPage() {
                 </Button>
                 <Button 
                   onClick={() => toggleBookmark(u)}
-                  className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-800 transition-colors"
+                  className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-400 transition-colors"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
