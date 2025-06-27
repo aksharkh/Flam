@@ -2,6 +2,8 @@
 import { useBookmarks } from '../../context/BookmarksContext'
 import Card from '../../components/Card'
 import Button from '../../components/Button'
+import Stars from '../../components/Stars'
+import { FaUserCircle } from 'react-icons/fa'
 
 export default function BookmarksPage() {
   const { bookmarks, toggleBookmark } = useBookmarks()
@@ -10,7 +12,7 @@ export default function BookmarksPage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-300 mb-2">Bookmarked Employees</h1>
-        <p className="text-gray-600">Your saved team members</p>
+        <p className="text-gray-400">Your saved team members</p>
       </div>
 
       {bookmarks.length === 0 ? (
@@ -28,9 +30,11 @@ export default function BookmarksPage() {
               <div className="flex justify-between items-start">
                 <div>
                   <h3 className="text-lg font-bold text-gray-300">{u.firstName} {u.lastName}</h3>
-                  <p className="text-sm text-gray-500">{u.email}</p>
+                  <p className="text-sm text-gray-400">{u.email}</p>
                 </div>
-                <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" />
+                <div className="bg-gray-200 dark:bg-gray-700 rounded-full p-2">
+                                  <FaUserCircle className="h-8 w-8 text-gray-500 dark:text-gray-400" />
+                                </div>
               </div>
               
               <div className="mt-4">

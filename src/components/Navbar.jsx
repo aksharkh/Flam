@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <nav className="bg-gradient-to-r from-blue-600 to-indigo-700 shadow-lg px-6 py-4">
+    <nav className="bg-gray-900 shadow-lg px-6 py-4">
       <div className="max-w-7xl mx-auto flex items-center">
         <div className="flex items-center space-x-10">
           <Link 
@@ -40,8 +40,8 @@ export default function Navbar() {
         </div>
         
         <div className="ml-auto flex items-center space-x-4">
-          <div className="w-10 h-10 rounded-full bg-blue-500 border-2 border-white flex items-center justify-center text-white font-bold">
-            JD
+          <div className="w-10 h-10 rounded-full bg-blue-400 border-1 border-white flex items-center justify-center text-white font-bold">
+            A
           </div>
         </div>
       </div>
